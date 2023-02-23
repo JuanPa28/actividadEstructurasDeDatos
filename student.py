@@ -7,4 +7,8 @@ class Student:
     def add_grade(self, grade):
         self.grades.append(grade)
 
+    def avarage_grade(self):
+        promedio= sum(self.grades) / len(self.grades)
+        return promedio
+
 
