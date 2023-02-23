@@ -12,6 +12,15 @@ info_students = [
 
 new_student = [Student(i["name"], i["age"], i["grades"]) for i in info_students]
 
-print("Student")
+print("\n")
+print("Estudiantes usando list comprenhension: ")
 for student in new_student:
     print(student)
+
+nota_minima = 3
+
+aprobados = [aprobado for aprobado in new_student if aprobado.avarage_grade() >= nota_minima]
+
+print("\n")
+for student in aprobados:
+    print("El estudiante ", student.name ,"aprobó ya que su nota fue", student.avarage_grade())
