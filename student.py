@@ -4,4 +4,7 @@ class Student:
         self.age = age
         self.grades = grades
 
+    def add_grade(self, grade):
+        self.grades.append(grade)
+
 
